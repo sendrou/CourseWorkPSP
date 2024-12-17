@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TcpConnectionLibrary.Client" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TcpConnectionLibrary.Server" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TankBattle.Managers.UIManager" Collapsed="true">
+    <Position X="12.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABAAAAAHAQAAAAAAQAggAAACAAAAgAAAAQAAEAQAAA=</HashCode>
+      <FileName>Managers\UIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TankBattle.Managers.TextureManager" Collapsed="true">
+    <Position X="10.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAEgAAQAAAAAQAAARAABAAABABACAgAAgAgCAAAAAA=</HashCode>
+      <FileName>Managers\TextureManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TankBattle.Managers.TimeManager" Collapsed="true">
+    <Position X="12.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAkAAAAAAAAAAEAAAAIAAAQAAAAAAAQ=</HashCode>
+      <FileName>Managers\TimeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TankBattle.Managers.RenderManager" Collapsed="true">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAQQgAACABAAAAAAEAAAAAAAAAAQAQkAIAAEAAAAAA=</HashCode>
+      <FileName>Managers\RenderManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TankBattle.Managers.PrizeManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGAAAAAIAAAAAgYAAEDAAAAAAAAAAAAAAAEABgAAEAE=</HashCode>
+      <FileName>Managers\PrizeManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TankBattle.Managers.PlayerManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAABBIAAKAAAgIAQEgAAAAQAAAAAIAAAQAAAiAAAAA=</HashCode>
+      <FileName>Managers\PlayerManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TankBattle.Managers.NetworkManager" Collapsed="true">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAKABADAAQAQAgAAARABAgEAAAQAAAAAQAwgICAAQ=</HashCode>
+      <FileName>Managers\NetworkManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TankBattle.Managers.GameManager" Collapsed="true">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAABABAAAAAEQAAAAAAAAAAIAwc=</HashCode>
+      <FileName>Managers\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TankBattle.Managers.ColliderManager" Collapsed="true">
+    <Position X="12.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAJAAAAAAAAAABAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\ColliderManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PrizesLibrary.Factories.PrizeFactory" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PrizesLibrary.Prizes.AmmoPrize" Collapsed="true">
+    <Position X="5" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PrizesLibrary.Prizes.ArmorPrize" Collapsed="true">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PrizesLibrary.Prizes.FuelPrize" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PrizesLibrary.Prizes.Prize" Collapsed="true">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PrizesLibrary.Prizes.HealthPrize" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <InheritanceLine Type="PrizesLibrary.Prizes.Prize" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="1.812" />
+        <Point X="7.5" Y="2.352" />
+        <Point X="6.5" Y="2.352" />
+        <Point X="6.5" Y="2.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PrizesLibrary.Prizes.SpeedBoostPrize" Collapsed="true">
+    <Position X="5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PrizesLibrary.Prizes.SpeedDeBoostPrize" Collapsed="true">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.ObjectRenderer" Collapsed="true">
+    <Position X="10.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.NetworkData" Collapsed="true">
+    <Position X="14.25" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.BulletData" Collapsed="true">
+    <Position X="14.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.TankDecorators.TankDecorator" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.TankDecorators.SpeedDeBoostDecorator" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.TankDecorators.SpeedBoostDecorator" Collapsed="true">
+    <Position X="7.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.TankDecorators.HealthBoostDecorator" Collapsed="true">
+    <Position X="7.75" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.TankDecorators.FuelBoostDecorator" Collapsed="true">
+    <Position X="7.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.TankDecorators.ArmorBoostDecorator" Collapsed="true">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.TankDecorators.AmmoBoostDecorator" Collapsed="true">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.Tank.BasicTank" Collapsed="true">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.Tank.AbstractTank" Collapsed="true">
+    <Position X="8.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.Data.PlayerState" Collapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.Data.PrizeState" Collapsed="true">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.Bullet" Collapsed="true">
+    <Position X="14.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameLibrary.CommonBullet" Collapsed="true">
+    <Position X="14.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="TcpConnectionLibrary.ITcpHandler" Collapsed="true">
+    <Position X="10.75" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="TankBattle.Managers.IGameObjectManager" Collapsed="true">
+    <Position X="10.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\IGameObjectManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

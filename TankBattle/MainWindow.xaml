@@ -1,0 +1,118 @@
+﻿<Window x:Name="GameWindow" x:Class="TankBattle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:glWpfControl="clr-namespace:OpenTK.Wpf;assembly=GLWpfControl"
+        xmlns:local="clr-namespace:TankBattle"
+        mc:Ignorable="d"
+        Title="Tank Battle" Height="600" Width="800" Icon="Sprites/icon.png">
+
+    <Grid x:Name="GameWindowGrid">
+        <!-- Определение строк и столбцов -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!-- Верхний отступ -->
+            <RowDefinition Height="Auto" />
+            <!-- Информация об игроках -->
+            <RowDefinition Height="*" />
+            <!-- Основная часть -->
+            <RowDefinition Height="Auto" />
+            <!-- Управляющие элементы -->
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <!-- Левая часть -->
+            <ColumnDefinition Width="Auto" />
+            <!-- Центр -->
+            <ColumnDefinition Width="*" />
+            <!-- Правая часть -->
+        </Grid.ColumnDefinitions>
+
+        
+
+        <!-- OpenGL Control -->
+        <glWpfControl:GLWpfControl x:Name="glControl"
+                                   Render="GlControl_Render"
+                                   Grid.Row="1" 
+                                   Grid.Column="0" 
+                                   Grid.ColumnSpan="3" Grid.RowSpan="3" />
+        <!-- Информация об игроках -->
+        <Label x:Name="firstPlayerInfo"
+       Content="Player 1"
+       HorizontalAlignment="Left"
+       VerticalAlignment="Top"
+       FontSize="16"
+       FontStyle="Italic"
+       FontWeight="Bold"
+       Grid.Row="1"
+       Grid.Column="0"
+       Margin="10,0,0,0" />
+
+        <Label x:Name="secondPlayerInfo"
+       Content="Player 2"
+       HorizontalAlignment="Right"
+       VerticalAlignment="Top"
+       FontSize="16"
+       FontStyle="Italic"
+       FontWeight="Bold"
+       Grid.Row="1"
+       Grid.Column="2"
+       Margin="0,0,10,0" />
+        <!-- Управляющие элементы -->
+        <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <!-- Ввод IP -->
+            <TextBox x:Name="IpAddressInput"
+                     Width="200"
+                     Height="25"
+                     Text="127.0.1.0"
+                     TextAlignment="Center"
+                     FontSize="14"
+                     ToolTip="Введите IP-адрес для подключения" />
+
+            <!-- Выбор роли -->
+            <Button x:Name="ServerButton"
+                    Content="Start as Server"
+                    Width="200"
+                    Height="40"
+                    FontSize="16"
+                    Click="ServerButton_Click" />
+
+            <Button x:Name="ClientButton"
+                    Content="Start as Client"
+                    Width="200"
+                    Height="40"
+                    FontSize="16"
+                    Click="ClientButton_Click" />
+
+            <!-- Выбор схемы управления -->
+            <ComboBox x:Name="ControlSchemeComboBox"
+                      Width="200"
+                      Height="30"
+                      FontSize="14"
+                      SelectionChanged="ControlSchemeComboBox_SelectionChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <ComboBoxItem Content="WASD" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsSelected="True" />
+                <ComboBoxItem Content="Arrow Keys" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            </ComboBox>
+
+            <!-- Метка IP -->
+            <Label x:Name="IpAddressLabel"
+                   Content="IP Address: ..."
+                   FontSize="14"
+                   FontStyle="Italic"
+                   FontWeight="Bold"
+                   Foreground="Black"
+                   HorizontalAlignment="Center" />
+
+            <!-- Метка окончания игры -->
+            <Label x:Name="GameOverLabel"
+                   Content="Game Over"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="Red"
+                   HorizontalAlignment="Center"
+                   Visibility="Hidden" />
+        </StackPanel>
+    </Grid>
+</Window>
